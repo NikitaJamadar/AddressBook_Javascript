@@ -133,17 +133,10 @@ function DeleteAddress(addressbook){
 let deleteIndex=addressArr.find(DeleteAddress);
 console.log(addressArr.splice(deleteIndex,1)+" is deleted")
 
-//UC6-Getting count of total address 
-let n=0;
-function GetTotal(a){
-   if(a!=null){
-       ++n;
-   }
-   return n;
-}
-console.log("Total count of addresses "+addressArr.reduce(GetTotal,0));
+
 
 //UC7-Checking for duplicate entries
+let n=0;
 function CheckDuplicate(a)
 {
     if(a.firstName.includes("Punit"))
